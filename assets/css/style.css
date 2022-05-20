@@ -1,0 +1,170 @@
+:root {
+  --color-dark-grey: #3c3c3c;
+}
+
+body {
+  background-color: #ccc;
+  font-family: "Arvo", serif;
+}
+
+.user-cards {
+  text-align: center;
+}
+
+.main-title {
+  margin: 20px 0;
+
+  color: var(--color-dark-grey);
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2em;
+  text-transform: capitalize;
+}
+
+.user-card {
+  display: inline-flex;
+  max-width: 550px;
+  width: 100%;
+  min-height: 350px;
+
+  margin-bottom: 10px;
+
+  background-color: #fff;
+}
+
+.user-card + .user-card {
+  margin-left: 5px;
+}
+
+.user-card-img {
+  width: 50%;
+
+  object-fit: cover;
+
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+
+  transition: filter 0.7s linear;
+}
+
+.angelina-img {
+  object-position: -190px 0px;
+}
+
+.djoni-img {
+  object-position: -32px 0px;
+}
+
+.will-img {
+  object-position: -110px 0px;
+}
+
+.user-card-img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+.user-card-name {
+  margin-bottom: 5px;
+
+  color: var(--color-dark-grey);
+
+  font-weight: 700;
+  font-style: 20px;
+  line-height: 1.2em;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+
+  color: #fff;
+  background: rgb(240, 211, 144);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 211, 144, 1) 0%,
+    rgba(142, 113, 49, 1) 38%,
+    rgba(69, 47, 12, 1) 87%
+  );
+
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+.btn + .btn {
+  margin-left: 20px;
+}
+
+.user-card-info {
+  margin: auto;
+  margin-left: 10px;
+}
+
+.social {
+  margin-top: 15px;
+
+  list-style: none;
+}
+
+.social-item {
+  display: inline-block;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+}
+
+.social-item + .social-item {
+  margin-left: 7px;
+}
+
+.instagram-item {
+  background-color: #f0d390;
+}
+
+.github-item {
+  background-color: #8e7131;
+}
+
+.twitter-item {
+  background-color: #452f0c;
+}
+
+.instagram-link,
+.github-link,
+.twitter-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.instagram-link {
+  background-image: url(./../icons/instagram.svg);
+  background-size: 30px 30px;
+}
+
+.github-link {
+  background-image: url(./../icons/github.svg);
+  background-size: 30px 30px;
+  background-position: 6px 6px;
+}
+
+.twitter-link {
+  background-image: url(./../icons/twitter.svg);
+  background-size: 26px 26px;
+}
